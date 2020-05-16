@@ -275,7 +275,8 @@ footer .links a:hover {
 
 
 footer .social {
-	background:#e67e22;
+	background:transparent;
+
 }
  
 footer .social a {
@@ -283,6 +284,29 @@ footer .social a {
 	text-decoration: none;
 	padding:10px;
 	display: inline-block;
+}
+
+footer .social img{
+	height: 50px;
+	width: 50px;
+	transition: ease 0.3s;
+	
+	transition-delay: 0.2s;
+
+}
+footer .social img:hover{
+	height: 75px;
+	width: 75px;
+	transition: ease 0.3s;
+}
+
+footer .social #social-labels{
+	color: white;
+}
+
+footer .social td{
+	width: 100px;
+	text-align: center;
 }
 
 /* END FOOTER
@@ -332,18 +356,24 @@ START REPONSIVE*/
 	aside .widget {
 		flex-grow:1;
 	}
+
+	footer .social #social-labels{
+		display: none;
+	}
+
+	body{
+		padding-bottom: 0;
+	}
+
 }
  
 @media screen and (max-width: 600px) {
 	aside {
 		flex-direction:column;
 	}
-
-	body{
-		padding-bottom: 0;
-	}
  
 	footer {
 		justify-content:space-around;
+		align-items: center;
 	}
 }
