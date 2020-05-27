@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap'); /*Light font*/
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body{
+    background-image: url(/img/login/blur_tu-tu-QZGQO3NvsLo-unsplash.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+/*/////////////////////*/
+
+.header-return{
+    width: 100%;
+    height: 60px;
+    background:rgb(255, 255, 255);
+    color: #000;
+    align-content: space-between;
+    padding-top: 9px;
+    padding-left: 3px;
+    transition: ease 0.7s;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.header-return .back-button{
+    float: left;
+    background: none;
+    border: none;
+    padding: 5px;
+    transition: ease 0.3s;
+}
+
+.header-return .back-button:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.header-return .title{
+    font-size: 25px;
+    width: 180px;
+    
+}
+
+.header-return .whatwedo{
+    float: right;
+    padding-top: 0;
+}
+
+
+/*//////////////////////////////////////*/
+.right-section{
+    width: 50%;
+    height: 820px;
+    float: right;
+    padding: 50px;
+    padding-bottom: 60px;
+}
+
+.right-section img{
+    width: 75%;
+    height: 750px;
+    position: static;
+}
+
+.left-section{
+    padding: 60px;
+    width: 45%;
+    text-align: center;
+}
+
+.left-section .containner{
+    background: #FFF;
+    color: #000;
+    padding: 60px;
+    width: 85%;
+    margin-left: 13%;
+}
+
+.logaccount{
+    border-radius: 100%;
+    width: 115px;
+    height: 115px;
+    text-align: center;
+    align-content: center;
+    padding-left: 5px;
+    padding-top: 4px;
+    border: black 3px solid;
+}
+
+label{
+    width: 100%;
+}
+
+.label-name{
+    width: 49.5%;
+}
+
+.label-fname{
+    width: 49.5%;
+}
+
+/****************************/
+
+.logbutton{
+    border: none;
+    background: rgba(0, 0, 0, 0.15);
+    color: black;
+    transition: ease-in 0.3s;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.logbutton:hover{
+    background-color: black;
+    color: white;
+
+    flex-grow: 3;
+}
+
+.containner a{
+    font-weight: bold;
+    text-decoration: underline black 0.6px;
+    color: black;
+}
+
+/*FLOATING BUTTON////////////////////////////*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:93%;
+	right:8px;
+	/*background-color: rgba(255, 255, 255, 0.94);*/
+	border-radius:50px;
+	text-align:center;
+    transition: ease 0.5s;
+}
+
+.float:hover{
+    background-color: rgba(173, 173, 173, 0.92);
+}
+
+.my-float{
+	margin-top:13px;
+}
+
+/* DAAAAAAAAAAAAAA*/
+@media screen and (max-width: 1520px){
+    
+    .left-section{
+        padding: 0;
+        margin: 0;
+    }
+
+    .right-section{
+        width: 57%;
+    }
+    
+    .left-section .containner{
+       width: 100%;
+       height: 1000px;
+       margin: 0;
+    }
+
+    .label-name{
+        width: 100%;
+    }
+    
+    .label-fname{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    
+  
+    body{
+         background-image: url(/img/login/tu-tu-tu-QZGQO3NvsLo-unsplash.jpg);
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+         background-repeat: no-repeat;
+         padding-bottom: 0;
+         text-align: center;
+         height: 900px;
+         overflow: hidden;
+    }
+
+    .right-section{
+        display: none;
+    }
+
+    .left-section{
+        width: 100%;
+    }
+
+    .left-section .containner{
+        background: rgba(255, 255, 255, 0.84);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+    }
+
+    .header-return{
+        background-color: rgba(255, 255, 255, 0.84);
+    }
+
+
+    /*.left-section .wrapper{
+        width: 100%;
+        height: 1000px;
+
+    }*/
+
+
+}
+

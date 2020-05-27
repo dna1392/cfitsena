@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap'); /*Light font*/
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body{
+    background-image: url(../img/login/zui-hoang-ojZ4wJNUM5w-unsplash.jpg) ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.header-return{
+    width: 100%;
+    height: 60px;
+    background:none;
+    color: #000;
+    align-content: space-between;
+    padding-top: 9px;
+    padding-left: 3px;
+    transition: ease 0.7s;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.header-return .back-button{
+    float: left;
+    background: none;
+    border: none;
+    padding: 5px;
+    transition: ease 0.3s;
+}
+
+.header-return .back-button:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.header-return .title{
+    font-size: 25px;
+    width: 180px;
+    
+}
+
+.header-return .whatwedo{
+    float: right;
+    padding-top: 0;
+}
+
+
+.containner {
+	background: #ffffff;;
+    /*max-width:25%;*/
+    margin-right: 37.5%;
+    margin-left: 37.5%;
+    margin-bottom: 0;
+    border-radius: 9px;
+    margin-top: 3%;
+    opacity: 0.94;
+
+	display:flex;
+    flex-flow:row wrap;
+    padding: 15px;
+}
+
+.logaccount{
+    border-radius: 100%;
+    background: #FFF;
+    width: 115px;
+    height: 115px;
+    text-align: center;
+    align-content: center;
+    padding-left: 5px;
+    padding-top: 4px;
+    border: black 3px solid;
+}
+
+.logtitle{
+    align-self: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.logdata{
+    padding: 30px;
+    width: 100%;
+
+}
+
+label{
+    width: 100%;
+}
+
+/*.shpassword{
+    border: none;
+    background: #FFF;
+    opacity: 0.94;
+    transition: ease-in 0.3s;
+}*/
+
+
+/****************************/
+
+.logbutton{
+    border: none;
+    background: rgba(0, 0, 0, 0.15);
+    color: black;
+    transition: ease-in 0.3s;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.logbutton:hover{
+    background-color: black;
+    color: white;
+
+    flex-grow: 3;
+}
+
+.containner a{
+    font-weight: bold;
+    text-decoration: underline black 0.6px;
+    color: black;
+}
+
+/***************/
+
+body .footpage{
+    background:white;
+    opacity: 0.8;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: visible;
+    z-index: 99;
+    align-content: space-between;
+    font-size: 15px;
+}
+
+body .footpage div{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 9px;
+    transition: ease 0.5s;
+}
+
+body .footpage div:hover{
+    background: rgba(0, 0, 0, 0.205);
+    cursor: pointer;
+}
+
+/*FLOATING BUTTON////////////////////////////*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:93%;
+	right:8px;
+	/*background-color: rgba(255, 255, 255, 0.94);*/
+	border-radius:50px;
+	text-align:center;
+    transition: ease 0.5s;
+}
+
+.float:hover{
+    background-color: rgba(173, 173, 173, 0.92);
+}
+
+.my-float{
+	margin-top:13px;
+}
+
+
+
+
+
+
+/*START REPONSIVE////////////////////////////////////*/
+ 
+@media screen and (max-width: 800px){
+    .containner{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .containner .logtitle,
+    .containner .logdata{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .footer {
+		justify-content:space-around;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 500px){
+    .header-return .title{
+        margin-right: 15%;
+    }
+
+    .header-return{
+        background-color: rgba(255, 255, 255, 0.94);
+    }
+
+    .containner{
+        padding: 17px;
+        border-radius: 0;
+    }
+
+    body .footer{
+        background: #FFF;
+    }
+}

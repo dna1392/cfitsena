@@ -10,7 +10,7 @@
  
 .containner {
 	background: #ffffff;;
-	width:76%;
+	width:86%;
 	margin:auto;
     margin-top: 20px;
     border-radius: 9px;
@@ -187,7 +187,7 @@ header nav a:hover {
     background:#444444;
     color: #FFF;
 
-    flex-grow: 3;
+    flex-grow: 4;
     transition-delay: 0.1s;
     transition-duration: 0.4s;
 }

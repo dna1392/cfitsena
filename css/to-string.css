@@ -1,0 +1,71 @@
+.login-form input[type="checkbox"]{
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.login-form .checkbox label{
+    text-align: center;
+    font-size: 15px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.login-form .checkbox label div{
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.login-form .checkbox label img{
+    vertical-align: middle;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.login-form .checkbox label:hover {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 3.5px;
+    border-radius: 7px;
+    border: 0.5px rgba(0, 0, 0, 0.6) groove;
+    padding: 3.5px;
+    border-radius: 7px;
+}
+
+.forms .checkbox label:before {
+    content: "";
+    display: inline-block;
+    background: none;
+    border: 3px solid #0074D9;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.login-form input[type="checkbox"]:checked + label{
+    background: #000;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+    padding: 3.5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    
+}
+
+.login-form input[type="checkbox"]:checked + label img{
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.login-form input[type="checkbox"]:checked + label div{
+    display: inline-flex;
+}
+
